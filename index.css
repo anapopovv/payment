@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/Poppins-Regular.otf') format(opentype);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    height: 46vw;
+}
+
+.form-payment {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 10px;
+    width: 400px;
+    height: 460px;
+    border: 1px solid #cecece;
+}
+
+h1 {
+    font-family: poppins;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.form-payment p {
+    font-family: poppins;
+    font-size: 13px;
+    opacity: 60%;
+    font-weight: 100;
+}
+
+.payment {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(236, 236, 250);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: 100;
+    color: #494949;
+}
+
+.input-cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    border: 2px solid #1976D1;
+    background-color: #ffffff;
+}
+
+#numero_cartao {
+    background-color: transparent;
+    width: 90%;
+    height: 100%;
+    outline: none;
+    padding-left: 10px;
+    font-family: poppins;
+    font-size: 13px;
+    border: none;
+}
+
+#numero_cartao::placeholder {
+    font-family: poppins;
+    font-size: 13px;
+    color: #0000006e;
+}
+
+.payment-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.payment-coluna {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-coluna input {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 7px;
+    border: 2px solid #1976D1;
+    font-family: poppins;
+    font-size: 13px;
+}
+
+.payment-coluna input::placeholder {
+    font-family: poppins;
+    font-size: 13px;
+    color: #0000006e;
+}
+
+.name {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 7px;
+    border: 2px solid #1976D1;
+    font-family: poppins;
+    font-size: 13px;
+}
+
+.name::placeholder {
+    font-family: poppins;
+    font-size: 13px;
+    color: #0000006e;
+}
+
+#cardLogos img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.btn-1 {
+    width: 175px;
+    height: 38px;
+    background-color: transparent;
+    color: #1976D1;
+    border: 2px solid #1976D1;
+    border-radius: 8px;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.btn-2 {
+    width: 175px;
+    height: 38px;
+    background-color: #1976D1;
+    color: #f3f3f3;
+    border: none;
+    border-radius: 8px;
+    font-family: poppins;
+    font-size: 13px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}

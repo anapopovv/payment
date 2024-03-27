@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <main>
+        <div class="form-payment">
+            <h1>Adicionar forma de pagamento</h1>
+            <p>Observação: nossa plataforma não faz cobranças sem autorização do titular.</p>
+            <div class="payment">
+                <label for="name">Número do cartão</label>
+                <div class="input-cart">
+                    <input type="number" id="numero_cartao" placeholder="0000 0000 0000 0000" oninput="checkCardType()">
+                    <div id="cardLogos"></div>
+                </div>
+
+                <div class="payment-row">
+                    <div class="payment-coluna">
+                        <label for="name">Vencimento</label>
+                        <input type="number" placeholder="00/00">
+                    </div>
+
+                    <div class="payment-coluna">
+                        <label for="name">CVC</label>
+                        <input type="number" placeholder="000">
+                    </div>
+                </div>
+
+                <label for="name">Nome do titular</label>
+                <input type="text" class="name" placeholder="Ana Popov">
+            </div>
+            <div class="btns">
+                <button class="btn-1">Cancelar</button>
+                <button class="btn-2">Adicionar</button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="/index.js"></script>
+</body>
+</html>
